@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HVAC Website Audit | Rae's Business Solutions</title>
+  <style>
+    :root {
+      --primary: #afff00; /* Electric Lime */
+      --primary-dark: #8bcc00;
+      --dark-bg: #121212; 
+      --card-bg: #1e1e1e;
+      --text-main: #ffffff;
+      --text-dim: #a0a0a0;
+      --accent-red: #ff4444;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; background: var(--dark-bg); color: var(--text-main); line-height: 1.6; }
+    
+    /* NEW: Urgency Bar */
+    .urgency-bar { background: var(--accent-red); color: white; padding: 8px 0; text-align: center; font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; }
+
+    .topbar { background: #000; color: var(--primary); padding: 12px 0; text-align: center; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid #333; font-weight: 900; }
+    
+    .hero { padding: 80px 0; position: relative; }
+    .container { width: 90%; max-width: 1100px; margin: 0 auto; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    
+    h1 { font-size: 56px; line-height: 0.95; margin-bottom: 25px; font-weight: 900; letter-spacing: -2px; }
+    h1 span { color: var(--primary); }
+    .hero p { font-size: 19px; color: var(--text-dim); margin-bottom: 35px; max-width: 500px; }
+    
+    .card { background: var(--card-bg); border-radius: 0px; padding: 40px; border-left: 8px solid var(--primary); box-shadow: 20px 20px 60px rgba(0,0,0,0.6); }
+    .card h2 { font-size: 26px; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; font-weight: 800; }
+    
+    .form-grid { display: grid; gap: 20px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    
+    input, textarea, select { 
+      width: 100%; padding: 15px; background: #2a2a2a; border: 1px solid #444; color: #fff; border-radius: 0; font-size: 16px; transition: 0.3s; 
+    }
+    input:focus, select:focus, textarea:focus { outline: none; border-color: var(--primary); background: #333; }
+    
+    .btn { 
+      display: block; width: 100%; padding: 20px; background: var(--primary); color: #000; font-weight: 900; font-size: 18px; 
+      cursor: pointer; border: none; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; 
+    }
+    .btn:hover { background: var(--primary-dark); transform: scale(1.02); }
+    .btn:disabled { background: #444; color: #888; cursor: not-allowed; }
+    
+    .social-proof { background: #0a0a0a; padding: 40px 0; border-top: 1px solid #222; border-bottom: 1px solid #222; text-align: center; }
+    .proof-label { font-size: 11px; text-transform: uppercase; color: #444; letter-spacing: 3px; margin-bottom: 25px; font-weight: 900; }
+    .logo-grid { display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 30px; opacity: 0.4; }
+    .logo-grid span { font-size: 18px; font-weight: 800; color: #fff; letter-spacing: -1px; }
+
+    #thankYouBox { display: none; text-align: center; }
+    #thankYouBox h2 { color: var(--primary); margin-bottom: 10px; }
+
+    .scheduler-section { padding: 100px 0; background: #000; border-top: 1px solid #222; }
+    .calendly-inline-widget { border: 1px solid #333; background: #fff; border-radius: 4px; overflow: hidden; }
+
+    /* NEW: Professional Footer */
+    footer { background: #000; padding: 60px 0; border-top: 1px solid #222; text-align: center; color: var(--text-dim); font-size: 14px; }
+    .footer-links { margin-bottom: 20px; }
+    .footer-links a { color: var(--primary); text-decoration: none; margin: 0 15px; text-transform: uppercase; font-weight: 700; font-size: 12px; }
+
+    @media (max-width: 960px) { 
+      .hero-grid { grid-template-columns: 1fr; text-align: center; } 
+      h1 { font-size: 42px; }
+      .hero p { margin: 0 auto 30px; }
+      .two-col { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="urgency-bar">⚠️ Limited Availability: Only 3 Review Slots Left This Week</div>
+
+  <div class="topbar">RAE'S BUSINESS SOLUTIONS // HVAC SYSTEMS AUDIT 2026</div>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1>Stop <span>Losing Calls</span> To A Broken Website</h1>
+        <p>Most HVAC sites have at least 3 critical errors stopping customers from booking. We'll find them live.</p>
+        
+        <div style="border-top: 1px solid #333; padding-top: 25px;">
+          <p style="font-size: 14px; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px;">The Walkthrough Includes:</p>
+          <ul style="list-style: none; color: var(--text-dim); font-size: 15px;">
+            <li style="margin-bottom: 8px;">// Mobile UI/UX Friction Analysis</li>
+            <li style="margin-bottom: 8px;">// Call-to-Action Visibility Check</li>
+            <li style="margin-bottom: 8px;">// Competitor Conversion Comparison</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div id="formContent">
+          <h2>Phase 1: Your Info</h2>
+          <form id="reviewForm" class="form-grid">
+            <div class="two-col">
+              <input type="text" name="first_name" placeholder="FIRST NAME" required />
+              <input type="text" name="last_name" placeholder="LAST NAME" required />
+            </div>
+            <input type="text" name="company_name" placeholder="HVAC COMPANY NAME" required />
+            <div class="two-col">
+              <input type="email" name="email" placeholder="EMAIL ADDRESS" required />
+              <input type="tel" name="phone" placeholder="PHONE NUMBER" required />
+            </div>
+            <input type="url" name="website" placeholder="WEBSITE URL (HTTPS://...)" required />
+            <select name="meeting_preference" required>
+              <option value="">SELECT MEETING TYPE</option>
+              <option value="Phone Call">VOICE CALL</option>
+              <option value="Video Meet">VIDEO SCREEN SHARE</option>
+            </select>
+            <button type="submit" class="btn" id="submitBtn">SECURE & CONTINUE</button>
+          </form>
+        </div>
+
+        <div id="thankYouBox">
+          <h2>DETAILS CAPTURED</h2>
+          <p style="color: var(--text-dim); margin-bottom: 25px;">The calendar below is now unlocked. Select your time slot to finalize.</p>
+          <a href="#scheduler" class="btn" style="text-decoration:none;">GO TO CALENDAR</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="social-proof">
+    <div class="container">
+      <div class="proof-label">Trusted by HVAC Professionals & Contractors</div>
+      <div class="logo-grid">
+        <span>[HEATING-CO]</span>
+        <span>[COOLING-MAX]</span>
+        <span>[AIR-FLUX]</span>
+        <span>[THERMO-PRO]</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="scheduler-section" id="scheduler">
+    <div class="container">
+      <h2 style="text-align:center; margin-bottom:40px; text-transform: uppercase; letter-spacing: 2px;">Phase 2: Secure Your Slot</h2>
+      <div id="calendly-embed" class="calendly-inline-widget" data-url="https://calendly.com/rbsolutions2026/hvac-website-review" style="min-width:320px;height:750px;"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="mailto:RBSolutions2026@gmail.com">Contact Support</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <p>&copy; 2026 Rae's Business Solutions. All Rights Reserved. <br>Providing high-impact conversion audits for the HVAC industry.</p>
+    </div>
+  </footer>
+
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <script>
+    // PASTE YOUR GOOGLE SCRIPT URL BELOW
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyityWhUPOI90nXiJj7bG6RZ0RMNVfSULkxTna47rs0nConlqEoOBur-KRkkjGUR7cW/exec";
+
+    const reviewForm = document.getElementById("reviewForm");
+    const thankYouBox = document.getElementById("thankYouBox");
+    const formContent = document.getElementById("formContent");
+
+    reviewForm.addEventListener("submit", async function(e) {
+      e.preventDefault();
+      const submitBtn = document.getElementById("submitBtn");
+      submitBtn.disabled = true;
+      submitBtn.textContent = "UPLOADING DATA...";
+
+      const formData = new FormData(reviewForm);
+      const payload = Object.fromEntries(formData.entries());
+
+      try {
+        await fetch(SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors", 
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify(payload)
+        });
+
+        formContent.style.display = "none";
+        thankYouBox.style.display = "block";
+
+        const fullName = encodeURIComponent(payload.first_name + " " + payload.last_name);
+        const email = encodeURIComponent(payload.email);
+        const prefillUrl = `https://calendly.com/rbsolutions2026/hvac-website-review?name=${fullName}&email=${email}`;
+        
+        const embedContainer = document.getElementById("calendly-embed");
+        embedContainer.innerHTML = "";
+        if (window.Calendly) {
+            Calendly.initInlineWidget({
+                url: prefillUrl,
+                parentElement: embedContainer
+            });
+        }
+
+        setTimeout(() => {
+          document.getElementById("scheduler").scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 800);
+
+      } catch (error) {
+        formContent.style.display = "none";
+        thankYouBox.style.display = "block";
+        document.getElementById("scheduler").scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  </script>
+</body>
+</html>
