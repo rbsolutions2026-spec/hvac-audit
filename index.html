@@ -6,24 +6,22 @@
   <title>HVAC Website Audit | Rae's Business Solutions</title>
   <style>
     :root {
-      --primary: #afff00; 
+      --primary: #afff00; /* Electric Lime */
       --primary-dark: #8bcc00;
       --dark-bg: #121212; 
       --card-bg: #1e1e1e;
       --text-main: #ffffff;
       --text-dim: #a0a0a0;
-      --accent-red: #ff4444;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; background: var(--dark-bg); color: var(--text-main); line-height: 1.6; }
     
-    .urgency-bar { background: var(--accent-red); color: white; padding: 8px 0; text-align: center; font-size: 13px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; }
-    .topbar { background: #000; color: var(--primary); padding: 12px 0; text-align: center; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid #333; font-weight: 900; }
+    .topbar { background: #000; color: var(--primary); padding: 15px 0; text-align: center; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; border-bottom: 1px solid #333; font-weight: 900; }
     .container { width: 90%; max-width: 1100px; margin: 0 auto; }
     
     /* Hero & Card */
-    .hero { padding: 80px 0; border-bottom: 1px solid #222; }
+    .hero { padding: 100px 0; border-bottom: 1px solid #222; }
     .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
     h1 { font-size: 56px; line-height: 0.95; margin-bottom: 25px; font-weight: 900; letter-spacing: -2px; }
     h1 span { color: var(--primary); }
@@ -43,7 +41,6 @@
     .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 40px; }
     .price-card { background: #1e1e1e; padding: 40px; border: 1px solid #333; display: flex; flex-direction: column; position: relative; }
     .price-card.featured { border: 2px solid var(--primary); transform: scale(1.05); z-index: 2; box-shadow: 0 0 30px rgba(175, 255, 0, 0.15); }
-    .popular-tag { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary); color: #000; font-size: 10px; font-weight: 900; padding: 5px 15px; text-transform: uppercase; }
     .price-tag { font-size: 32px; font-weight: 900; color: var(--primary); margin: 20px 0; }
     .price-tag span { font-size: 14px; color: var(--text-dim); font-weight: 400; }
     .price-features { list-style: none; margin-bottom: 30px; flex-grow: 1; }
@@ -63,19 +60,19 @@
 </head>
 <body>
 
-  <div class="urgency-bar">?? Limited Availability: Only 3 Review Slots Left This Week</div>
   <div class="topbar">RAE'S BUSINESS SOLUTIONS // HVAC SYSTEMS AUDIT 2026</div>
 
   <section class="hero">
     <div class="container hero-grid">
       <div>
         <h1>Stop <span>Losing Leads</span> To A Leaky Website</h1>
-        <p>I identify the friction points in your HVAC lead flow. We'll audit your mobile site and booking process live—together.</p>
+        <p>I identify technical friction points in your HVAC lead flow. We'll audit your mobile site and booking process liveâ€”together.</p>
         <div style="border-top: 1px solid #333; padding-top: 25px;">
           <p style="color: var(--primary); font-weight: 700; text-transform: uppercase; font-size: 13px;">Walkthrough Includes:</p>
           <ul style="list-style: none; color: var(--text-dim); font-size: 14px;">
             <li>// Mobile UI/UX Audit</li>
             <li>// Call-to-Action Efficiency Check</li>
+            <li>// Speed-to-Lead Technical Review</li>
           </ul>
         </div>
       </div>
@@ -135,7 +132,6 @@
           <a href="#reviewForm" class="btn-outline">Start With Audit</a>
         </div>
         <div class="price-card featured">
-          <div class="popular-tag">Recommended</div>
           <h3>Growth Engine</h3>
           <div class="price-tag">$1,497<span> + $299/mo</span></div>
           <ul class="price-features">
